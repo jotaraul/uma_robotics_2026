@@ -45,7 +45,6 @@ def launch_setup(context, *args, **kwargs):
             executable="lifecycle_manager",
             name="lifecycle_manager_navigation",
             parameters=[
-                    {"autostart": True},
                     {
                         "node_names": [
                             "map_server",
