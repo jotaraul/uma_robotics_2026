@@ -1,0 +1,8 @@
+InlayHints:
+  Enabled: No
+  ParameterNames: Yes
+  DeducedTypes: No
+  Designators: No
+
+CompileFlags:
+  Remove: [-fopenmp,-fopenmp=libomp]
