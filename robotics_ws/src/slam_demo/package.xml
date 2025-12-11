@@ -11,7 +11,7 @@
 
   <depend>mvsim</depend>
   <depend>navigation2</depend>
-  <depend>slam-toolbox</depend>
+  <depend>slam_toolbox</depend>
 
   <export>
     <build_type>ament_cmake</build_type>
