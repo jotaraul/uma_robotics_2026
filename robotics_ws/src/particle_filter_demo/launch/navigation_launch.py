@@ -45,8 +45,8 @@ def launch_setup(context, *args, **kwargs):
             executable="lifecycle_manager",
             name="lifecycle_manager_navigation",
             parameters=[
+                    {"autostart": True},
                     {
-                    	"autostart": True,
                         "node_names": [
                             "map_server",
                             "amcl"
@@ -56,15 +56,6 @@ def launch_setup(context, *args, **kwargs):
         ),
     ]
 
-    # To create the map, return this instead of the navigation_nodes list
-    slam = LifecycleNode(
-        namespace='',
-        parameters=[configured_params],
-        package='slam_toolbox',
-        executable='async_slam_toolbox_node',
-        name='slam_toolbox',
-        prefix="xterm -hold -e",
-    )
 
     nodes = []
     nodes.extend(navigation_nodes)
